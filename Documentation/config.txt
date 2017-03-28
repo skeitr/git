@@ -329,6 +329,14 @@ advice.*::
 		show directions on how to proceed from the current state.
 --
 
+core.checksumIndex::
+	Tell Git to validate the checksum at the end of the index
+	file to detect corruption.  Defaults to `true`.  Those who
+	work on a project with too many files may want to set this
+	variable to `false` to make it faster to load the index (in
+	exchange for reliability, but in general modern disks are
+	reliable enough for most people).
+
 core.fileMode::
 	Tells Git if the executable bit of files in the working tree
 	is to be honored.
